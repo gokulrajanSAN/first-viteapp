@@ -13,7 +13,6 @@ const Battery = () => {
             if (charge === 4) {
                 setCharge(1)
             }
-
         }, 1000);
     }
 
