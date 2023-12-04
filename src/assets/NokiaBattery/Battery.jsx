@@ -2,8 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import "./Battery.css"
 import { TimeContext } from "../Context/Context"
 
-
-const Battery = () => {
+const Battery = () => {    
 
     const [charge, setCharge] = useState(0)
 
@@ -13,11 +12,11 @@ const Battery = () => {
         setTimeout(() => {
             if (charge <= 3) {
                 setCharge(charge + 1)
-            }
+            }   
             if (charge === 4) {
                 setCharge(1)
             }
-        }, time || 1000);
+        }, time);
     }
 
     useEffect(() => {
