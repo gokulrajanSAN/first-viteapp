@@ -16,7 +16,7 @@ const Battery = () => {
             if (charge === 4) {
                 setCharge(1)
             }
-        }, time);
+        }, time*1000);
     }
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const Battery = () => {
         console.log(time);
     
         return ()=>{clearTimeout(charging)}
-    }, [charge, time])
+    }, [charge])
 
     return (
         <div className="battery">
